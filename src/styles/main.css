@@ -1,0 +1,17 @@
+.container{
+    height:100vh;
+    width:100%;
+    display:flex;
+    padding-left:130px;
+    align-items:center;
+}
+
+/* title component */
+.title{
+    display:flex;
+    width:100%;
+    justify-content:center;
+    text-transform:capitalize;
+    font-size:1.5rem;
+    font-weight:800;
+}

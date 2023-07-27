@@ -1,10 +1,15 @@
 import React from 'react'
 import "../styles/home.css"
+import "../styles/main.css"
 import Typewriter from "typewriter-effect";
+import { Layout, Nav } from "../components"
 
 const Home = () => {
     return (
-        <div className="home__container">
+        // <Layout>
+
+        <div className="container">
+
             <div className="home__box">
                 <p className="home__title">Yogesh Pradhan</p>
 
@@ -21,6 +26,7 @@ const Home = () => {
                 <button className="home__button">Hire me</button>
             </div>
         </div>
+        // </Layout>
     )
 }
 

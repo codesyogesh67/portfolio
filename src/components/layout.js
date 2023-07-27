@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
 import styled, { ThemeProvider } from 'styled-components';
-import { Home } from '../pages';
+import { Home, About } from '../pages';
 import { Nav } from '../components';
-import { GlobalStyles, theme } from '../styles';
 
 const StyledContent = styled.div`
   display: flex;
@@ -18,12 +17,11 @@ const Layout = () => {
         <>
             {/* <Head /> */}
 
-            <div id="root">
-                {/* <ThemeProvider theme={theme}> */}
-                <GlobalStyles />
+            <div >
+
 
                 <Nav />
-                <Home />
+
 
 
             </div>
