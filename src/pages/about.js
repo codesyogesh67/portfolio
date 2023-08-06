@@ -2,10 +2,13 @@ import React from 'react'
 import "../styles/main.css"
 import "../styles/about.css"
 import { Title } from "../components"
+import { motion } from "framer-motion";
 
-const About = () => {
+
+
+const About = ({ setSelectedPage }) => {
     return (
-        <div className="container">
+        <motion.div id="about" className="container" onViewportEnter={() => setSelectedPage("about")}>
 
             <div className="about__box">
                 <Title title="About Me" />
@@ -24,7 +27,7 @@ const About = () => {
                 {/* PHoto */}
             </div>
 
-        </div>
+        </motion.div>
     )
 }
 

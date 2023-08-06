@@ -3,12 +3,14 @@ import "../styles/home.css"
 import "../styles/main.css"
 import Typewriter from "typewriter-effect";
 import { Layout, Nav } from "../components"
+import { motion } from "framer-motion";
 
-const Home = () => {
+const Home = ({ setSelectedPage }) => {
     return (
         // <Layout>
 
-        <div className="container">
+        <motion.div className="container" id="home"
+            onViewportEnter={() => setSelectedPage("home")}>
 
             <div className="home__box">
                 <p className="home__title">Yogesh Pradhan</p>
@@ -25,7 +27,7 @@ const Home = () => {
                         robust functionality, and seamless user interactions.</p>
                 <button className="home__button">Hire me</button>
             </div>
-        </div>
+        </motion.div>
         // </Layout>
     )
 }

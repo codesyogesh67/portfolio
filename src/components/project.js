@@ -1,5 +1,7 @@
 import React from 'react'
 import "../styles/project.css"
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LanguageIcon from '@mui/icons-material/Language';
 
 const Project = (props) => {
     const { image, live, github, title, description } = props.features;
@@ -14,8 +16,9 @@ const Project = (props) => {
                     {description}
                 </p>
                 <div className="project__links">
-                    <span>{live}</span>
-                    <span>{github}</span>
+                    <GitHubIcon />
+                    <LanguageIcon />
+
                 </div>
 
             </div>

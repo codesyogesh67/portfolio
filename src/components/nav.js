@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import AnchorLink from "react-anchor-link-smooth-scroll"
 
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 
@@ -15,7 +16,7 @@ import "../styles/nav.css"
 
 
 
-function Nav() {
+function Nav({ setSelectedPage }) {
 
     const [showMenu, setShowMenu] = useState(false)
 
@@ -32,11 +33,16 @@ function Nav() {
                     {links.map(({ name, icon }, index) => {
                         return (
                             <li className="nav__item" key={index}>
-                                <NavLink to={name} onClick={() => setShowMenu(!showMenu)} className={({ isActive }) => isActive ? 'nav__link active-nav' : 'nav__link'}>
+
+
+
+                                {/* <AnchorLink href={`#${name}`} onClick={() => setSelectedPage(name)} className={({ isActive }) => isActive ? 'nav__link active-nav' : 'nav__link'}> */}
+                                <AnchorLink href={`#${name}`} onClick={() => setSelectedPage(name)} className='nav__link'>
                                     <p className="nav__icon">{icon}</p>
                                     <h3 className="nav__name">{name}</h3>
 
-                                </NavLink>
+                                </AnchorLink>
+
 
 
                             </li>

@@ -13,7 +13,7 @@ const Projects = () => {
         async function get_projects() {
             const ref = collection(db, "projects")
             const projectsList = await getDocs(ref)
-            console.log(projectsList)
+
 
             setList(
                 projectsList.docs.map((doc) =>
@@ -35,13 +35,13 @@ const Projects = () => {
         get_projects()
 
     }, [])
-    console.log("projects", list)
+
     return (
-        <div className="projects">
+        <div className="projects" id="projects">
             <Title title="Projects" />
             <div className="projects__container">
-                {list.map((each_project) => (
-                    <Project features={each_project} />
+                {list.map((each_project, index) => (
+                    <Project features={each_project} key={index} />
                 ))
                 }
 
