@@ -10,6 +10,9 @@ const Project = (props) => {
             <div className="project__imageContainer">
                 <img className="project__image" src={image} alt="My Project" />
             </div>
+
+
+
             <div className="project__detail">
                 <h2 className="project__title">{title}</h2>
                 <p className="project__description">
@@ -23,7 +26,8 @@ const Project = (props) => {
 
             </div>
 
-        </div>
+
+        </div >
     )
 }
 

@@ -12,18 +12,18 @@ const MainPage = () => {
     const [isTopOfPage, setIsTopOfPage] = useState(true);
 
     useEffect(() => {
-        console.log("scrolling..")
+
         const handleScroll = () => {
             if (window.scrollY === 0) {
                 setIsTopOfPage(true);
                 setSelectedPage("home");
-                console.log("first")
+
             }
             if (window.scrollY !== 0) setIsTopOfPage(false);
         };
         window.addEventListener("scroll", handleScroll);
     }, [selectedPage])
-    console.log(selectedPage)
+
     return (
         <div>
             <Nav isTopOfPage={isTopOfPage}
