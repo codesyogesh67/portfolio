@@ -7,23 +7,67 @@
 }
 
 .home__title{
-    font-size:3.5rem;
-}
+    font-size:4.5rem;
+    color:var(--green);
+    font-family: 'Dancing Script', cursive;
+
+} 
 
 .home__description{
-    width:80%;
+    width:60%;
 }
 
 .home__button{
-    max-width:180px;
-    padding: 10px 20px;
-    background:var(--green);
-    color:black;
+    max-width:260px;
+    padding: 15px 20px;
+    background:var(--lightest-navy);
+    color:white;
+    border:1px solid var(--lightest-navy);
     font-size:1.2rem;
     cursor:pointer;
-    border:none;
+    /* text-transform: uppercase; */
     border-radius:10px;
-    margin:20px 0;
+    margin:30px 0;
+    font-weight:800;
+ 
+
+}
+
+.home__button span{
+    display:flex;
+    align-items:center;
+
+}
+
+
+
+.home__icon{
+    margin-left:10px;
+}
+
+
+.home__button .handshake {
+    display: none;
+}
+
+
+
+
+.home__button .backhand {
+    display: inline-block;
+} 
+ 
+ .home__button:hover .backhand {
+    display: none;
+}
+
+.home__button:hover .handshake {
+    display: inline-block;
+} 
+
+.home__button:hover{
+    background:var(--green);
+    color:black;
 }
 
 .Typewriter__wrapper {

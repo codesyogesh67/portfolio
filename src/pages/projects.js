@@ -7,7 +7,7 @@ import { getFirestore, collection, getDocs, query, where, deleteDoc, getDoc, doc
 
 const Projects = () => {
     const [list, setList] = useState([])
-    // console.log(db)
+
 
     useEffect(() => {
         async function get_projects() {
@@ -38,7 +38,10 @@ const Projects = () => {
 
     return (
         <div className="projects" id="projects">
-            <Title title="Projects" />
+            <Title title="Unveiling Your Skills: Projects in Focus" />
+
+            <p className="projects__subtitle">Every project is a canvas for my dedication to
+                            mastering coding's intricacies and embracing growth.</p>
             <div className="projects__container">
                 {list.map((each_project, index) => (
                     <Project features={each_project} key={index} />

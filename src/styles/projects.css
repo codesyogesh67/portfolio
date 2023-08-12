@@ -11,11 +11,20 @@
     padding:20px;
     margin:20px; */
     display:grid;
-    grid-template-columns:repeat(auto-fill,minmax(400px,1fr));
+    grid-template-columns:repeat(auto-fill,minmax(360px,1fr));
     column-gap:50px;
     row-gap:50px;
     margin-left:150px; 
 
     padding:20px;
+}
+
+.projects__subtitle{
+    text-align:center;
+    color:var(--green);
+    margin-top:-20px;
+    font-size:1rem;
+    margin-bottom:100px;
+    font-style:italic;
 }
 

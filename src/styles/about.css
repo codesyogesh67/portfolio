@@ -9,19 +9,33 @@
 .about__text{
     flex:1;
     display:flex;
+    flex-direction:column;
     align-items:center;
     padding:0 40px;
+}
+
+.about__highlightWords{
+    color:var(--green);
+}
+
+.about__descriptionPoints{
+    display:flex;
+    align-items:center;
 }
 
 .about__image{
   
     width:400px;
-    height:400px;
+    /* height:400px; */
+    height:100%;
+ 
+  
 
 }
 
 .about__image >img{
     width:100%;
     height:100%;
-    object-fit:contain;
+    object-fit:cover;
+    border-radius:10px;
 }

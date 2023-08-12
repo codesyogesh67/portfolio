@@ -12,6 +12,11 @@
     width:100%;
     justify-content:center;
     text-transform:capitalize;
-    font-size:1.5rem;
-    font-weight:800;
+
+    word-spacing:0.6rem;
+    font-size:2.2rem;
+    /* text-transform: uppercase; */
+    font-weight:800;color:var(--lightest-slate);
+    padding-bottom:20px;
+    font-family: 'Dancing Script', cursive;
 }
