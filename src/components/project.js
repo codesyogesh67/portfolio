@@ -33,9 +33,7 @@ const Project = (props) => {
 
             <div className="project__detail">
                 <h2 className="project__title">{title}</h2>
-                <p className="project__description">
-                    {description}
-                </p>
+
                 <div className="project__links">
                     <button>
                         <div className="project__linksIcon">

@@ -1,19 +1,22 @@
 .contact{
     height:100vh;
     padding:20px;
-    margin-left:150px; 
+    /* margin-left:150px;  */
+    padding-top:100px;
 }
 .contact__container{
     display:flex;
-    margin-top:80px;
+    flex-direction:column;
+    margin-top:0px;
 }
 
 .contact__details{
     flex:0.5;
+    padding:0 20px;
 }
 
 .contact__detailsTitle{
-    font-size:2.3rem;
+    font-size:1.5rem;
     font-weight:700;
 }
 
@@ -29,7 +32,8 @@
     padding:20px;
     flex:0.3;
     border-radius:10px;
-    margin-left:50px;
+    margin-left:0px;
+    margin:20px;
 }
 .contact__form form{
     padding:20px;
@@ -80,4 +84,37 @@
     background:var(--green);
     color:var(--dark-navy);
     font-weight:700;
+}
+
+
+@media only screen and (min-width:1024px){
+    .contact{
+        margin-left:150px;
+    
+    }
+
+    .contact__container{
+        display:flex;
+        flex-direction:row;
+        margin-top:80px;
+    }
+
+    .contact__details{
+    
+        padding:0;
+    }
+
+    .contact__form{
+        background:var(--light-navy);
+        padding:20px;
+        flex:0.3;
+        border-radius:10px;
+        margin:0;
+        margin-left:50px;
+    }
+
+    .contact__detailsTitle{
+        font-size:2rem;
+        font-weight:700;
+    }
 }

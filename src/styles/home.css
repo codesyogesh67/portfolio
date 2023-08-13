@@ -3,6 +3,7 @@
 .home__box{
     display:flex;
     flex-direction:column;
+    align-items:center;
 
 }
 
@@ -10,11 +11,14 @@
     font-size:4.5rem;
     color:var(--green);
     font-family: 'Dancing Script', cursive;
+    text-align:center;
 
 } 
 
 .home__description{
-    width:60%;
+    width:100%;
+    padding:20px;
+    text-align:center;
 }
 
 .home__button{
@@ -74,4 +78,23 @@
     color: white;
     font-size: 2rem;
     font-weight: 600;
+  }
+
+  @media only screen and (min-width:1024px){
+    .home__box{
+        display:flex;
+        flex-direction:column;
+        align-items:start;
+    
+    }
+      .home__title{
+          text-align:start;
+        
+      }
+
+      .home__description{
+        width:60%;
+        padding:0;
+        text-align:start;
+    }
   }

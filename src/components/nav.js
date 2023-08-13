@@ -24,11 +24,25 @@ function Nav({ setSelectedPage }) {
         setShowMenu(!showMenu)
     }
 
+    const goToPage = (name) => {
+        setShowMenu(false)
+
+        setSelectedPage(name)
+
+
+
+
+    }
+
 
     return (
 
         <nav className="nav">
             <div className={`${showMenu ? 'nav__menu show-menu' : 'nav__menu'}`}>
+                <div className="nav__closeIcon">
+                    <CloseOutlinedIcon onClick={handleMenu} />
+
+                </div>
                 <ul className="nav__list">
                     {links.map(({ name, icon }, index) => {
                         return (
@@ -37,7 +51,7 @@ function Nav({ setSelectedPage }) {
 
 
                                 {/* <AnchorLink href={`#${name}`} onClick={() => setSelectedPage(name)} className={({ isActive }) => isActive ? 'nav__link active-nav' : 'nav__link'}> */}
-                                <AnchorLink href={`#${name}`} onClick={() => setSelectedPage(name)} className='nav__link'>
+                                <AnchorLink href={`#${name}`} onClick={() => goToPage(name)} className='nav__link'>
                                     <p className="nav__icon">{icon}</p>
                                     <h3 className="nav__name">{name}</h3>
 
@@ -54,11 +68,11 @@ function Nav({ setSelectedPage }) {
             </div>
             <div className="nav__toggle">
 
-                {!showMenu ? (
+                {!showMenu && (
                     <DragHandleOutlinedIcon onClick={handleMenu} />
-                )
+                )}
 
-                    : (<CloseOutlinedIcon onClick={handleMenu} />)}
+
 
 
 

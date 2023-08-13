@@ -5,6 +5,8 @@
 
 .about__section{
     display:flex;
+    flex-direction:column;
+    align-items:center;
 }
 .about__text{
     flex:1;
@@ -25,9 +27,11 @@
 
 .about__image{
   
-    width:400px;
+    width:300px;
     /* height:400px; */
+    
     height:100%;
+  
  
   
 
@@ -38,4 +42,15 @@
     height:100%;
     object-fit:cover;
     border-radius:10px;
+}
+
+@media only screen and (min-width:1024px){
+    .about__section{
+        display:flex;
+        flex-direction:row
+    }
+
+    .about__image{
+        width:400px;
+    }
 }
