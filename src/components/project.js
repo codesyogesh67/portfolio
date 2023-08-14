@@ -3,6 +3,7 @@ import "../styles/project.css"
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LanguageIcon from '@mui/icons-material/Language';
 import TextSnippetIcon from '@mui/icons-material/TextSnippet';
+import { Link } from "react-router-dom"
 
 const Project = (props) => {
     const [showContent, setShowContent] = useState(false)
@@ -36,17 +37,17 @@ const Project = (props) => {
 
                 <div className="project__links">
                     <button>
-                        <div className="project__linksIcon">
+                        <Link to={github} className="project__linksIcon">
                             <span>GitHub </span>
                             <GitHubIcon />
-                        </div>
+                        </Link>
 
                     </button>
                     <button>
-                        <div className="project__linksIcon">
+                        <Link className="project__linksIcon" to={live}>
                             <span>Live Preview</span>
                             <LanguageIcon />
-                        </div>
+                        </Link>
 
                     </button>
 

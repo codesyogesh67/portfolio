@@ -1,13 +1,17 @@
 .contact{
-    height:100vh;
+    height:100%;
     padding:20px;
-    /* margin-left:150px;  */
-    padding-top:100px;
+
+    padding-top:20px;
+
+  
+   
 }
 .contact__container{
     display:flex;
     flex-direction:column;
     margin-top:0px;
+  
 }
 
 .contact__details{
@@ -34,6 +38,8 @@
     border-radius:10px;
     margin-left:0px;
     margin:20px;
+    max-width:500px;
+
 }
 .contact__form form{
     padding:20px;
@@ -90,6 +96,7 @@
 @media only screen and (min-width:1024px){
     .contact{
         margin-left:150px;
+        
     
     }
 
@@ -97,6 +104,7 @@
         display:flex;
         flex-direction:row;
         margin-top:80px;
+        
     }
 
     .contact__details{
@@ -107,10 +115,12 @@
     .contact__form{
         background:var(--light-navy);
         padding:20px;
-        flex:0.3;
+        flex:0.5;
         border-radius:10px;
         margin:0;
         margin-left:50px;
+        max-width:500px;
+        
     }
 
     .contact__detailsTitle{

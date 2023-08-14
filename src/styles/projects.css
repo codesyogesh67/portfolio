@@ -1,20 +1,16 @@
 .projects{
     padding:20px;
-  
+    padding-bottom:100px;
 }
 
 .projects__container{
-    /* display:grid;
-    grid-template-columns: repeat(auto-fit,minmax(150px,2fr)); */
-    /* gap:50px;
-
-    padding:20px;
-    margin:20px; */
+   
     display:grid;
-    grid-template-columns:repeat(auto-fill,minmax(360px,1fr));
+    grid-template-columns:repeat(auto-fill,minmax(450px,1fr));
     column-gap:50px;
     row-gap:50px;
-    /* margin-left:150px;  */
+    place-items:center;
+
 
     padding:20px;
 }

@@ -17,12 +17,12 @@
 
 .home__description{
     width:100%;
-    padding:20px;
+    padding: 20px 100px;
     text-align:center;
 }
 
 .home__button{
-    max-width:260px;
+    max-width:300px;
     padding: 15px 20px;
     background:var(--lightest-navy);
     color:white;

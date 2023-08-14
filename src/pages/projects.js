@@ -38,7 +38,7 @@ const Projects = () => {
 
     return (
         <div className="projects" id="projects">
-            <Title title="Unveiling Your Skills: Projects in Focus" />
+            <Title title="Unveiling Skills: Projects in Focus" />
 
             <p className="projects__subtitle">Every project is a canvas for my dedication to
                             mastering coding's intricacies and embracing growth.</p>
